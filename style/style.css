@@ -1,0 +1,212 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto; /* centraliza o conteudo */
+    padding: 0 20px;
+        /* dica 1 valor centraliza em cima e em baixo, 2 valor aplica dos lados */
+}
+
+header{
+    background-color: #2c1810;
+    position: fixed; /* fixa sempre no topo */
+    top: 0;
+    width: 100%;    /* ocupa toda largura */
+    z-index: 10;    /* para ficar acima dos outros elementos */
+}
+
+.Nav-Bar{
+    display: flex;
+    justify-content: space-between; /*Cria um espaçamento entre os itens */
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+   
+.Nav-Links{
+    display: flex;
+    list-style: none; /* remove as bolinhas da lista */
+    gap: 2rem;
+}
+    
+.Nav-Links a {
+    color: #fff;
+    text-decoration: none; /* remove o sublinhado */ 
+
+}
+
+.Nav-Links a:hover{     /* quando passar o mouse em cima muda a cor */
+    color: burlywood;
+
+}
+
+.hero{
+    background: linear-gradient(rgba(44,24,16,0.7), rgba(44,24,16,0.7)),
+    url('https://images.unsplash.com/photo-1512568400610-62da28bc8a13?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687')
+    center / cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 60px;
+}
+/* vh = view height = (a tela inteira) ou seja 100vh tela inteira 50vh metade da tela  */
+
+
+.hero-conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.hero-conteudo h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-conteudo p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: burlywood;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgb(255, 211, 154);
+}
+
+.sobre{
+    padding: 5rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.sobre h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c1810;
+}
+
+.sobre p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #797777;
+}
+
+.produtos{
+    padding: 5rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.produtos h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2c1810;
+}
+
+.produtos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produtos-card{
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.produtos-card:hover {
+    transform: translatey(-10px); /* move o elemento 10px para cima */
+    transition: transform 0.3s ease-in-out; /* adiciona uma transição suave */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.produto-icon{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.preco{
+    font-weight: bold;
+    color: burlywood;
+    font-size: 1.5rem;
+}
+
+.localizacao{
+    padding: 5rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.localizacao h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c1810;
+}
+
+.contato-info{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mapa{
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #2c1810;
+    top: 0;
+    width: 100%;    /* ocupa toda largura */
+    padding: 1rem;
+}
+
+.footer-p{
+    text-align: center;
+    color: #fff;
+}
